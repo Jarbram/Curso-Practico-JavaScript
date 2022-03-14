@@ -1,0 +1,471 @@
+
+:root{
+    --yellow:yellow;
+    --strong-white:#ffffff;
+}
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html{
+    font-size:62.5%;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(55, 60, 87) 0%, rgba(0,0,4,1) 100%);
+    background-repeat: no-repeat;
+    
+}
+
+header{
+    display: flex;
+    justify-content:space-around;
+    color: #ffffff;
+    font-size: 2.8rem;
+    margin: 30px;
+    text-align: center;
+    align-items:center;
+}
+.logo_header{
+    margin:0 30px;
+}
+
+.logo_header a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+.logo_header span{
+    color:var(--yellow);
+}
+
+.subtitulo span{
+    color:var(--yellow);
+    font-weight:bold;
+}
+  
+main{
+    display: flex;
+    justify-content:space-around;
+    flex-direction:column;
+    color: #ffffff;
+    margin:40px 20px 0px 20px;
+    align-items:center;
+    text-align:center;
+}  
+
+.container_welcome p{
+    margin:20px;
+    width:200px;
+    font-size:1.8rem;
+    
+}
+
+.container_navigation{
+    display: flex;
+    margin:20px 20px ;
+    width:200px;
+    justify-content:center;
+    font-size: 2rem;
+    line-height:5rem;
+}
+
+.container_navigation ul{
+    list-style: none;
+}
+
+.container_navigation a{
+    text-decoration: none;
+    text-align: center;
+    color:var(--yellow);
+}
+
+.container-title h2{
+    font-size:2rem;
+}
+.container-title{
+    margin:30px;
+}
+
+.Geometry {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(10, 10, 12, 0.37);
+    border-radius: 20px;
+    border:none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    color: black;
+}
+
+.cuadrado form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:15px;
+    
+}
+.cuadrado label{
+    margin:10px;
+    font-size:1.5rem;
+}
+.cuadrado input{
+    background-color: black;
+    color: #ffffff;
+    width:120px;
+    height:30px;
+    border:none;
+    border-radius: 10px;
+    text-align:center;
+    margin-bottom: 20px;
+}
+.button-cuadrado{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cuadrado button{
+    width:120px;
+    height:30px;
+    font-size: 1.5rem;
+    border:none;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.cuadrado p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:120px;
+    height:30px;
+    background-color:var(--yellow);
+    font-size: 1.5rem;
+    text-align: center;
+    padding:5px;
+}
+.triangulo{
+    border-top-style: solid;
+    width:100%;
+}
+.triangulo h2{
+    margin-top: 20px;
+}
+
+.triangulo form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:15px;
+    
+}
+.triangulo label{
+    margin:10px;
+    font-size:1.5rem;
+}
+.triangulo input{
+    background-color: black;
+    color: #ffffff;
+    width:120px;
+    height:30px;
+    border:none;
+    border-radius: 10px;
+    text-align:center;
+    margin-bottom: 20px;
+}
+.button-triangulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.triangulo button{
+    width:120px;
+    height:30px;
+    font-size: 1.5rem;
+    border:none;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.triangulo p{
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    width:120px;
+    height:30px;
+    background-color:var(--yellow);
+    font-size: 1.5rem;
+    text-align: center;
+    padding:5px;
+}
+
+.circulo{
+    border-top-style: solid;
+    width:100%;
+}
+
+.circulo h2{
+    margin-top: 20px;
+}
+
+.circulo form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:15px;
+    
+}
+.circulo label{
+    margin:10px;
+    font-size:1.5rem;
+}
+.circulo input{
+    background-color: black;
+    color: #ffffff;
+    width:120px;
+    height:30px;
+    border:none;
+    border-radius: 10px;
+    text-align:center;
+    margin-bottom: 20px;
+}
+.button-circulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circulo button{
+    width:120px;
+    height:30px;
+    font-size: 1.5rem;
+    border:none;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.circulo p{
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    width:120px;
+    height:30px;
+    background-color:var(--yellow);
+    font-size: 1.5rem;
+    text-align: center;
+    padding:5px;
+}
+.triangulo-isosceles{
+    border-top-style: solid;
+    width:100%;
+}
+.triangulo-isosceles h2{
+    margin-top: 20px;
+}
+
+.triangulo-isosceles form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:15px;
+    
+}
+.triangulo-isosceles label{
+    margin:10px;
+    font-size:1.5rem;
+}
+.triangulo-isosceles input{
+    background-color: black;
+    color: #ffffff;
+    width:120px;
+    height:30px;
+    border:none;
+    border-radius: 10px;
+    text-align:center;
+    margin-bottom: 20px;
+}
+.button-triangulo-isosceles{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.triangulo-isosceles button{
+    width:120px;
+    height:30px;
+    font-size: 1.5rem;
+    border:none;
+    border-radius: 10px;
+}
+.triangulo-isosceles p{
+    margin-top: 20px;
+    margin-bottom:20px ;
+    width:120px;
+    height:30px;
+    background-color:var(--yellow);
+    font-size: 1.5rem;
+    text-align: center;
+    padding:5px;
+}
+.calc-title h2{
+    font-size:2rem;
+}
+.calc-title{
+    margin:18px;
+}
+.discount {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(10, 10, 12, 0.37);
+    border-radius: 20px;
+    border:none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:  20px;
+    color: black;
+}
+
+.calc{
+    width:370px;
+}
+
+.calc h2{
+    margin: 20px;
+}
+
+.calc form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:15px;
+    
+}
+.calc label{
+    margin:10px;
+    font-size:1.5rem;
+}
+.calc input{
+    background-color: black;
+    color: #ffffff;
+    width:120px;
+    height:30px;
+    border:none;
+    border-radius: 10px;
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.calc button{
+    width:120px;
+    height:30px;
+    font-size: 1.5rem;
+    border:none;
+    border-radius: 10px;
+}
+.calc p{
+    margin-top: 20px;
+    margin-bottom:20px ;
+    width:120px;
+    height:30px;
+    background-color:var(--yellow);
+    font-size: 1.5rem;
+    text-align: center;
+    padding:5px;
+}
+
+.statistics h2{
+    font-size:2rem;
+}
+.statistics-title{
+    margin:18px;
+}
+
+.statistics{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(10, 10, 12, 0.37);
+    border-radius: 20px;
+    border:none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:  20px;
+    color: black;
+    width: 370px;
+}
+.card{
+    width: 100%;
+}
+.card h2{
+    margin: 20px;
+}
+.card form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:15px;
+    
+}
+.card label{
+    margin:10px;
+    font-size:1.5rem;
+}
+.card input{
+    background-color: black;
+    color: #ffffff;
+    width:120px;
+    height:30px;
+    border:none;
+    border-radius: 10px;
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.card button{
+    width:120px;
+    height:30px;
+    font-size: 1.5rem;
+    border:none;
+    border-radius: 10px;
+}
+.card p{
+    margin-top: 20px;
+    margin-bottom:20px ;
+    width:150px;
+    height:50px;
+    background-color:var(--yellow);
+    font-size: 1.5rem;
+    text-align: center;
+    padding:5px;
+}
+
+.card-mediana{
+    border-top-style: solid;
+    width:100%;
+}
+.card-moda{
+    border-top-style: solid;
+    width:100%;
+}
+
+footer{
+    height:50px;
+    text-align:center;
+    font-size:1.9rem;
+    margin: 20px 0;
+   
+}
+
+footer p{
+    color: white;
+}
+
+footer span{
+    color:var(--yellow);
+    font-weight:bold;
+}

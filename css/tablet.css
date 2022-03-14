@@ -1,0 +1,42 @@
+header{
+    font-size:3.6rem;
+}
+.container_welcome p{
+    font-size:2.5rem;
+    margin:50px;
+    width: 400px;
+    line-height:4rem;
+}
+.container_navigation{
+    font-size:2rem;
+    line-height:5rem;
+}
+.Geometry{
+    width:600px;
+}
+.cuadrado{
+    font-size:1.5rem;
+    font-weight:700;
+}
+.triangulo{
+    font-size:1.5rem;
+}
+.circulo{
+    font-size:1.5rem;
+}
+.triangulo-isosceles{
+    font-size:1.5rem;
+}
+
+.discount{
+    width:600px;
+}
+.calc{
+    font-size:1.5rem;
+}
+.statistics{
+    width:600px;
+}
+card{
+    font-size:1.5rem;
+}

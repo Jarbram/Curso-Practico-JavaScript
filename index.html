@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/537dfddeee.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width : 992px) ">
+    <title>Curso Practico JavaScript</title>
+</head>
+<body>
+    <header>
+       <div class="logo_header">
+        <a href="#" class="logo">A<span>H</span></a>
+       </div> 
+       <div class="subtitulo">
+       <p>Curso Practico <span>JavaScript</span></p>
+      </div>              
+     </header>
+    <main>
+       <div class="container_welcome">
+          <p>
+            Welcome adventurous, take a rest and funny with this calcs
+         </p>
+       </div>
+       <div class="container_navigation">
+           <ul class="main_nav">
+            <li>
+              <a href="#geometry" class="nav_links">Geometry</a>
+            </li>
+            <li>
+              <a href="#discount" class="nav_links">Discounts</a>
+            </li>
+            <li>
+              <a href="#statistics" class="nav_links">Statistics</a>
+            </li>
+          </ul>
+       </div>
+       <section class="Geometry" id="geometry">
+        <div class="container-title">
+           <h2>Geometry</h2>
+        </div>
+           <section class="cuadrado">
+            <h2> Calcular el area y perimetro del cuadrado</h2>
+            <form>
+                <label for="InputCuadrado">
+                    Escribe cuanto mide cada lado de tu cuadrado:
+                </label>
+                <input id="InputCuadrado" type="number"/>
+                <div class="button-cuadrado">
+                <button class="button-cuadrado--perimetro" type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+                <p id="resultCuadradoPerimetro"></p>
+                <button class="button-cuadrado--area" type="button" onclick="calcularAreaCuadrado()">Calcular el area</button>
+                <p id="resultCuadradoArea"></p>
+                </div>
+                
+                
+            </form>
+        </section>
+        <section class="triangulo">
+            <h2>Calcular el area y perimetro del triangulo</h2>
+            <form>
+                <label for="InputTriangulo">
+                    Escribe cuanto mide cada lado de tu triangulo:
+                </label>
+                <input id="InputTrianguloLado1" type="number" placeholder="Lado1"/>
+                <input id="InputTrianguloLado2" type="number" placeholder="Lado2"/>
+                <input id="InputTrianguloBase" type="number" placeholder="Base" />
+                <input id="InputTrianguloAltura" type="number" placeholder="Altura" />
+                <div class="button-triangulo">
+                <button class="button-triangulo--perimetro" type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+                <p id="resultTrianguloPerimetro"></p>
+                <button class="button-triangulo--area" type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>
+                <p id="resultTrianguloArea"></p>
+               </div>
+               
+               
+            </form>
+        </section>
+        <section class="circulo">
+            <h2>Calcular el area y perimetro del circulo</h2>
+            <form>
+                <label for="InputCirculo">
+                    Escribe cuanto mide el radio de tu circulo:
+                </label>
+                <input id="InputCirculoRadio" type="number"/>
+                <div class="button-circulo">
+                <button class="button-circulo--perimetro" type="button" onclick="calcularPerimetroCirculo()">Calcular el perimetro</button>
+                <p id="resultCirculoPerimetro"></p>
+                <button class="button-circulo--area" type="button" onclick="calcularAreaCirculo()">Calcular el area</button> 
+                <p id="resultCirculoArea"></p>
+               </div>
+               
+              
+            </form>
+        </section>
+        <section class="triangulo-isosceles">
+            <h2>Calcular la altura del triangulo Isosceles</h2>
+            <form>
+                <label for="InputTriangulo">
+                    Escribe cuanto mide cada lado de tu triangulo:
+                </label>
+                <input id="InputTrianguloLado" type="number" placeholder="Lados"/>
+                <input id="InputTrianguloBaseA" type="number" placeholder="Base" />
+                <div class="button-trianguloIsosceles">
+                <button class="button-triangulo--altura" type="button" onclick="calcularAlturaTriangulo()">Calcular la altura</button>
+                <p id="resultTrianguloAltura"></p>
+               </div>
+               
+            </form>
+        </section>
+    </section>
+    <section class="discount" id="discount">
+        <div class="container-title">
+            <h2>Discounts</h2>
+        </div>
+        <section class="calc">
+        <h2>Calcula el precio a pagar de tus procutos con descuento</h2>
+        <form>
+            <label class="calc-price" for="InputPrice">Escribe el precio de tu producto</label>
+            <input id="InputPrice" type="number">
+            <label class="calc-discount" for="InputDiscount" >Escribe el descuento de tu producto</label>
+            <input id="InputDiscount" type="number">
+            <button type="button" onclick="calcPriceDiscount()">
+                Calcular
+            </button>
+
+            <p id="resultPrice"></p>
+        </form>
+       </section>
+   </section>
+
+<section class="statistics" id="statistics">
+    <div class="statistics-title">
+        <h2>Statistics</h2>
+    </div>
+    <section class="card" >
+        <form class="card-mediaAritmetica" >
+            <h2>Media Aritmetica</h2>
+            <label for="inputPromedio" >Ingresa tus datos: </label>
+            <input id="inputPromedio" type="text" placeholder="Ej: 20, 10, 50" > 
+            <button type="button" onclick="calcularMediaAritmetica()" >Calcular la media</button>
+            <p id="resultadoMedia"></p>
+        </form>
+    </section>
+    <section class="card">
+        <form class="card-mediana">
+            <h2> Mediana</h2>
+            <label for="inputMediana">Ingresa tus datos: </label>
+            <input id="inputMediana" type="text" placeholder="Ej: 20, 10, 50" >
+            <button type="button" onclick="calcularMediana()">Calcular la mediana</button>
+            <p id="resultadoMediana"></p>
+        </form>
+    </section>
+    <section class="card">
+        <form class="card-moda">
+            <h2> Moda</h2>
+            <label for="inputModa">Ingresa tus datos: </label>
+            <input id="inputModa" type="text" placeholder="Ej: 20, 10, 50" >
+            <button type="button" onclick="calcularModa()">Calcular la moda</button>
+            <p id="resultadoModa"></p>
+        </form>
+    </section>
+
+
+</section>
+
+    <footer>
+        <p>Si pudes imaginarlo,<span> puedes programarlo.</span></p>
+    </footer>
+
+
+    </main>
+
+
+
+<script src="/geometry.js"></script>
+<script src="/descuento.js"></script>
+<script src="./funcionesEstadisticas.js"></script>
+</body>
+</html>
