@@ -54,7 +54,7 @@
                 <div class="button-cuadrado">
                 <button class="button-cuadrado--perimetro" type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
                 <p id="resultCuadradoPerimetro"></p>
-                <button class="button-cuadrado--area" type="button" onclick="calcularAreaCuadrado()">Calcular el area</button>
+                <button class="button-cuadrado--area" type="button" onclick="calcularAreaCuadrado()" >Calcular el area</button>
                 <p id="resultCuadradoArea"></p>
                 </div>
                 
@@ -74,7 +74,7 @@
                 <div class="button-triangulo">
                 <button class="button-triangulo--perimetro" type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
                 <p id="resultTrianguloPerimetro"></p>
-                <button class="button-triangulo--area" type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>
+                <button class="button-triangulo--area" type="button" onclick="calcularAreaTriangulo()" >Calcular el area</button>
                 <p id="resultTrianguloArea"></p>
                </div>
                
@@ -91,7 +91,7 @@
                 <div class="button-circulo">
                 <button class="button-circulo--perimetro" type="button" onclick="calcularPerimetroCirculo()">Calcular el perimetro</button>
                 <p id="resultCirculoPerimetro"></p>
-                <button class="button-circulo--area" type="button" onclick="calcularAreaCirculo()">Calcular el area</button> 
+                <button class="button-circulo--area" type="button" onclick="calcularAreaCirculo()" >Calcular el area</button> 
                 <p id="resultCirculoArea"></p>
                </div>
                
@@ -107,7 +107,7 @@
                 <input id="InputTrianguloLado" type="number" placeholder="Lados"/>
                 <input id="InputTrianguloBaseA" type="number" placeholder="Base" />
                 <div class="button-trianguloIsosceles">
-                <button class="button-triangulo--altura" type="button" onclick="calcularAlturaTriangulo()">Calcular la altura</button>
+                <button class="button-triangulo--altura" type="button" onclick="calcularAlturaTriangulo()" >Calcular la altura</button>
                 <p id="resultTrianguloAltura"></p>
                </div>
                
@@ -119,13 +119,13 @@
             <h2>Discounts</h2>
         </div>
         <section class="calc">
-        <h2>Calcula el precio a pagar de tus procutos con descuento</h2>
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
         <form>
             <label class="calc-price" for="InputPrice">Escribe el precio de tu producto</label>
             <input id="InputPrice" type="number">
             <label class="calc-discount" for="InputDiscount" >Escribe el descuento de tu producto</label>
             <input id="InputDiscount" type="number">
-            <button type="button" onclick="calcPriceDiscount()">
+            <button type="button" onclick="calcPriceDiscount()" >
                 Calcular
             </button>
 
@@ -152,7 +152,7 @@
             <h2> Mediana</h2>
             <label for="inputMediana">Ingresa tus datos: </label>
             <input id="inputMediana" type="text" placeholder="Ej: 20, 10, 50" >
-            <button type="button" onclick="calcularMediana()">Calcular la mediana</button>
+            <button type="button" onclick="calcularMediana()" >Calcular la mediana</button>
             <p id="resultadoMediana"></p>
         </form>
     </section>
@@ -161,7 +161,7 @@
             <h2> Moda</h2>
             <label for="inputModa">Ingresa tus datos: </label>
             <input id="inputModa" type="text" placeholder="Ej: 20, 10, 50" >
-            <button type="button" onclick="calcularModa()">Calcular la moda</button>
+            <button type="button" onclick="calcularModa()" >Calcular la moda</button>
             <p id="resultadoModa"></p>
         </form>
     </section>

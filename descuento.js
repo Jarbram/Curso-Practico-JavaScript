@@ -17,8 +17,5 @@ function calcPriceDiscount(){
 
     const resultP = document.getElementById("resultPrice");
     resultP.innerHTML = calcular;
-
-
-
 }
 
